@@ -43,6 +43,28 @@ li {
   background-color: #111
 }
 
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-button span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+}
+
+
+
 #Home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/images/camera.jpg);
@@ -81,10 +103,11 @@ li {
 .aesthetics-container {
   display: flex;
   color: white; 
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
   align-content:center;
   width: 100%;
+  /* border:1px solid red; */
 }
 .aesthetics-content-1 {
   width: 100%;
@@ -99,6 +122,7 @@ li {
   font-weight: 400;
   font-size: 1.5rem;
   font-style: normal;
+  padding: 2rem;
   
 }
 
@@ -291,9 +315,31 @@ li {
   width: 350px;
 }
 } */
+ @media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
 
-@media(max-width: 640px ){
-.aesthetics-container {
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #111;
+    padding: 20px;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .links li {
+    margin: 15px 0;
+  }
+
+  .aesthetics-container {
   display: flex;
   flex-wrap: wrap;
   /* padding: 2rem 0rem; */
@@ -304,10 +350,20 @@ li {
 }
 .aesthetics-content-1 img{
   /* width: 350px; */
-  width: 100vw;
+  width: 100%;
+}
 }
 
+/* @media(max-width: 640px ){
+.aesthetics-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  width: 100%;
 }
-/* @media screen {
-  
+.aesthetics-content-1 img{
+  width: 100%;
+}
+
 } */
