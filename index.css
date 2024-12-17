@@ -100,18 +100,30 @@ li {
 
 #Aesthetics{
   /* width: 100%; */
- padding: 1.2rem;
+ padding: 2rem 1.2rem;
+ display: flex;
+ align-items: center;
+ align-content: center;
+ 
 }
 .aesthetics-container {
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  
   color: white; 
   /* justify-content: space-evenly; */
   align-items: center;
   align-content:center;
-  width: 100%;
+  /* padding: 2rem; */
+  /* width: 100%; */
+  max-width: 1200px;
+    margin: 0 auto;
+
   /* border:1px solid red; */
 }
 .aesthetics-content-1 {
+  flex: 1;
   width: 100%;
 }
 .aesthetics-content-1 img {
@@ -119,6 +131,7 @@ li {
   /* width: 100%; */
 }
 .aesthetics-content-2 {
+  flex:1;
   width: 100%;
   font-family: "Petit Formal Script", serif;
   font-weight: 400;
