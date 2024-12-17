@@ -219,13 +219,13 @@ li {
   width: 50px;
 }
 
-#Box {
+/* #Box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 350px;
   height: 300px;
-}
+} */
 
 /* -----===== Footer section styles =====----- */
 
@@ -354,7 +354,13 @@ li {
   /* width: 350px; */
   width: 100%;
 }
+.box .boxDes {
+  font-size: 1.2rem;
 }
+
+}
+
+
 
 @media(max-width: 640px ){
 .aesthetics-container {
@@ -363,5 +369,14 @@ li {
 .aesthetics-content-1 img{
   width: 100%;
 }
+.aesthetics-content-2 {
+  /* flex:1; */
+  font-size: 1rem;  
+  line-height: 1.5rem;
+}
 
+.services-container .box {
+  width: 300px;
+  height: 250px;
+}
 }
